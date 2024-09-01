@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starfall Defender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Recherche</div>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <div id="menu" class="menu">
+        <div id="content" class="container">
+            <div class="logo">
+                <h1>Starfall Defender</h1>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Rechercher...">
+            </div>
+            <div class="menu-buttons">
+                <button id="start-game">Start Game</button>
+                <button>Options</button>
+                <button>High Scores</button>
+                <button>Credits</button>
+            </div>
+            <div class="settings-icon" id="settings-icon">
+                <img src="settings-icon.png" alt="Paramètres">
+            </div>
+        </div>
+        <div class="navigation-arrows">
+            <button id="left-arrow" class="arrow">&larr;</button>
+            <button id="right-arrow" class="arrow">&rarr;</button>
+        </div>
+    </div>
+
+    <!-- Section du jeu -->
+    <div id="game" class="game hidden">
+        <div class="game-container">
+            <h2>Starfall Defender</h2>
+            <div id="game-board"></div>
+            <div class="score">Score: <span id="score">0</span></div>
+            <button id="restart-game">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
